@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Мой Telegram Бот</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			padding: 10px;
+		}
+		input[type=text] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: none;
+			border-radius: 4px;
+			background-color: #fff;
+		}
+		button {
+			background-color: #008CBA;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			background-color: #005a77;
+		}
+	</style>
+</head>
+<body>
+	<form action="https://api.telegram.org/botYOUR_TOKEN/sendMessage" method="post">
+		<input type="hidden" name="chat_id" value="@your_bot_username">
+		<input type="text" name="text" placeholder="Введите сообщение...">
+		<button type="submit">Отправить</button>
+		<button type="button" onclick="location.href='https://telegram.me/your_bot_username'">Открыть в Telegram</button>
+		<button type="button" onclick="location.href='https://t.me/joinchat/AAAAAEp6wxFFMCI8TdyAXw'">Присоединиться к каналу</button>
+	</form>
+</body>
+</html>
